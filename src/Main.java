@@ -1,17 +1,39 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import java.lang.*;
+class Equations {
+    public int makeByXq1(int a1, int f1){
+        int res = a1 + f1;
+        return res;
+    }
+    public int makeByXs1(int c1, int e1, int h1){
+        int n = 2;
+        int part1 = c1 * n;
+        int part2 = e1;
+        int part3 = h1 * n;
+        int res = part1 + part2 + part3;
+        return res;
+    }
+    public double makeFree1(int d1, int i1){
+        int part1 = (int)Math.pow(d1,2);
+        int part2 = (int)Math.pow(i1,2);
+        part2 = -part2;
+        double res = part1 + part2;
+        res = -res;
+        return res;
+    }
+    public void getResult1(){
+        int a = this.makeByXq1(1,-1);
+        int b = this.makeByXs1(2,-2,3);
+        double c = this.makeFree1(2,-3);
+        System.out.println("a= "+a+"  b= "+b+"  c= "+c);
+        double xd = c / b;
+        if (a == 0){
+            System.out.println("x = "+xd);
+        }
+    }
+}
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
-
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        Equations r01 = new Equations();
+        r01.getResult1();
     }
 }
